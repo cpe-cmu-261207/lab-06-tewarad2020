@@ -67,7 +67,8 @@ const Historicalresult = () => {
             console.log(dateandprice)
             return (
                 <div className='text-center space-y-3'>
-                    <p className='text-xl font-semibold'> ( From {start} To {end})</p>
+                    <p className='text-2xl font-semibold'>Historical price</p>
+                    <p className='text-xl font-semibold'> ( From {start} To {end} )</p>
                     <ul>
                         {dateandprice.map((e) => <li className='text-xl' key={e.key}>{e.key} - {e.value.toLocaleString()} THB</li> )}
                     </ul>
